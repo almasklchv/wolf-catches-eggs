@@ -1,0 +1,42 @@
+.scene {
+  overflow: hidden;
+  position: relative;
+  margin: auto;
+  width: 1001px;
+  height: 629px;
+  background-image: url("../images/Scene.png");
+}
+
+.timer {
+  position: absolute;
+  right: 220px;
+  top: 15px;
+  font-family: 'Minecraft';
+  color: #44403c;
+  font-size: 50px;
+  letter-spacing: 4px;
+}
+
+.wolf {
+  width: 611px;
+  height: 340px;
+  position: relative;
+  top: 200px;
+  left: 186px;
+}
+
+.left-bottom {
+  background-image: url("../images/wolf-left-bottom.png");
+}
+
+.left-top {
+  background-image: url("../images/wolf-left-top.png");
+}
+
+.right-bottom {
+  background-image: url("../images/wolf-right-bottom.png");
+}
+
+.right-top {
+  background-image: url("../images/wolf-right-top.png");
+}

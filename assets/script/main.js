@@ -28,6 +28,7 @@ document.addEventListener('keydown', (event) => {
 
 
 function spawnEgg() {
+    
     let egg = document.createElement('div')
     let randomChicken = Math.floor(Math.random() * (5 - 1) + 1);
     let x;
@@ -206,4 +207,20 @@ function animateChickRunning(sprite) {
         chick.remove()
     }, 350)
 }
+
+function startTimer() {
+    let timer = document.createElement('p');
+    let seconds = 0;
+    timer.classList.add('timer');
+    scene.append(timer)
+    setInterval(() => {
+        seconds++;
+        timer.textContent = seconds;
+    }, 1000)
+}
+
+
+
+
 spawnEgg()
+startTimer();
