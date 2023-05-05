@@ -4,15 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="image/x-icon" href="./assets/images/favicon.ico" rel="shortcut icon">
+    <link type="Image/x-icon" href="./assets/images/favicon.ico" rel="icon"> 
     <link rel="stylesheet" href="./assets/css/normalize.css">
     <link rel="stylesheet" href="./assets/css/fonts.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Wolf catches eggs</title>
 </head>
 <body>
-    <div class="scene">
-        <div class="wolf left-bottom"></div>
+    <button class="btn btn_play">▶</button>
+    <p class="play-text">Играть</p>
+    <div class="control">
+        <div class="keys">
+            <img class="key key-q" src="./assets/images/key-q.png" width="52px" alt="">
+            <img class="key key-a" src="./assets/images/key-a.png" width="52px" alt="">
+            <img class="key" src="./assets/images/key-e.png" width="52px" alt="">
+            <img class="key" src="./assets/images/key-d.png" width="52px" alt="">
+        </div>
+        <p class="title">Управление</p>
+        <img src="./assets/images/arrow.png" alt="" class="arrow">
     </div>
+    <span class="leader-table-btn"></span>
+    <p class="leader-table-text">Таблица<br>игроков</p>
+    <div class="leader-table">
+        <span class="back-to-menu"></span>
+        <ul class="leader-table-list">
+        </ul>
+    </div>
+    <div class="your-name">
+        <h2 class="title-2">Введите ваше имя</h2>
+        <input type="text" id="name" required>
+        <button class="btn btn_next">Дальше</button>
+    </div> 
+    <div class="choose-difficulty">
+        <h2 class="title-2">Выберите сложность игры</h2>
+        <div class="difficulties">
+            <p class="difficulty easy">Легкий</p>
+            <p class="difficulty medium">Средний</p>
+            <p class="difficulty hard">Сложный</p>
+        </div>
+    </div>
+    <div class="game-over">
+        <h2 class="title-2">Вы проиграли</h2>
+        <span class="home-btn"></span>
+        <span class="start-again-btn"></span>
+    </div>
+    
+
     <script src="./assets/script/main.js"></script>
 </body>
 </html>

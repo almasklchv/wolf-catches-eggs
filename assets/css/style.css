@@ -1,7 +1,14 @@
+body {
+  background-color: #0f0f0f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .scene {
   overflow: hidden;
-  position: relative;
-  margin: auto;
+  position: absolute;
+  top: 15%;
   width: 1001px;
   height: 629px;
   background-image: url("../images/Scene.png");
@@ -14,6 +21,16 @@
   font-family: 'Minecraft';
   color: #44403c;
   font-size: 50px;
+  letter-spacing: 4px;
+}
+
+.best-score {
+  position: absolute;
+  left: 195px;
+  top: 45px;
+  font-family: 'Minecraft';
+  color: #44403c;
+  font-size: 30px;
   letter-spacing: 4px;
 }
 
@@ -39,4 +56,237 @@
 
 .right-top {
   background-image: url("../images/wolf-right-top.png");
+}
+
+.btn {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  color: #4CAF50;
+}
+
+.btn_play {
+  position: absolute;
+  left: 45.5%;
+  top: 40%;
+  font-size: 150px;
+}
+
+.btn_play:hover {
+  color: #fff;
+}
+
+.play-text, .leader-table-text {
+  position: absolute;
+  left: 44.3%;
+  top: 59%;
+  font-size: 30px;
+  color: #fff;
+  letter-spacing: 10px;
+}
+
+.leader-table-text {
+  left: 65.3%;
+}
+
+.keys {
+  position: absolute;
+  left: 40%;
+  top: 15%;
+}
+
+.key {
+  box-shadow: 0px 0px 20px #4caf50;
+  margin-right: 50px;
+  background-color: #fff;
+  border-radius: 15%;
+  
+}
+
+.arrow {
+  position: absolute;
+  left: 15%;
+  top: 5%;
+  transform: rotate(48deg);
+}
+
+.title {
+  position: absolute;
+  left: 10%;
+  font-size: 45px;
+  color: #fff;
+  top: 25%;
+  letter-spacing: 5px;
+  opacity: 0.9;
+  transform: rotate(10deg);
+}
+
+.leader-table-btn {
+  cursor: pointer;
+  position: absolute;
+  left: 65.5%;
+  top: 42%;
+  width: 165px;
+  height: 165px;
+  background: url('../images/table-leader-ico.png');
+  background-size: cover;
+}
+
+.leader-table-btn:hover {
+  background: url('../images/table-leader-hover-ico.png');
+  background-size: cover;
+}
+
+.leader-table {
+  display: none;
+  justify-content: center;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.leader-table-list {
+  list-style: none;
+  color: #fff;
+  letter-spacing: 3px;
+  font-size: 60px;
+}
+
+.leader-table-item {
+  margin-bottom: 20px;
+}
+
+.back-to-menu {
+  cursor: pointer;
+  float: left;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  background: url('../images/back-arrow.png');
+  background-size: cover;
+}
+
+.back-to-menu:hover {
+  background: url('../images/back-arrow-hover.png');
+  background-size: cover;
+}
+
+.your-name {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: -2%;
+}
+
+.title-2 {
+  color: #fff;
+  letter-spacing: 5px;
+  font-size: 40px;
+  margin-top: 97%;
+}
+
+#name {
+  width: 400px;
+  height: 40px;
+  background: transparent;
+  border: 1px solid #FFFFFF;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  padding-left: 10px;
+  color: #fff;
+  letter-spacing: 2px;
+  font-size: 25px;
+}
+
+.btn_next {
+  width: 250px;
+  padding: 15px;
+  background: #4CAF50;
+  border-radius: 30px;
+  color: #fff;
+
+  font-size: 25px;
+  letter-spacing: 2px;
+}
+
+.btn_next:hover {
+  background: #fff;
+  color: #0f0f0f;
+}
+
+.difficulties {
+  display: flex;
+  justify-content: space-around;
+}
+
+.choose-difficulty {
+  display: none;
+}
+
+.choose-difficulty .title-2 {
+  margin-top: 65%;
+}
+
+.difficulty {
+  cursor: pointer;
+  color: #fff;
+  font-size: 30px;
+  letter-spacing: 2.5px;
+  padding: 20px;
+  border-radius: 80%;
+}
+
+.difficulty:hover {
+  background-color: #fff;
+}
+
+.easy {
+  color: #6BE400;
+  box-shadow: 0px 0px 20px #6BE400;
+}
+
+.medium {
+  color: #FFA900;
+  box-shadow: 0px 0px 20px #FFA900;
+}
+
+.hard {
+  color: #FF2800;
+  box-shadow: 0px 0px 20px #FF2800;
+}
+
+.game-over {
+  display: none;
+}
+
+.start-again-btn {
+  cursor: pointer;
+  position: absolute;
+  left: 70.5%;
+  top: 48%;
+  width: 135px;
+  height: 135px;
+  background: url('../images/start-again.png');
+  background-size: cover;
+}
+
+.start-again-btn:hover {
+  background: url('../images/start-again-hover.png');
+  background-size: cover;
+}
+
+.home-btn {
+  cursor: pointer;
+  position: absolute;
+  left: 20.5%;
+  top: 48%;
+  width: 135px;
+  height: 135px;
+  background: url('../images/home.png');
+  background-size: cover;
+}
+
+.home-btn:hover {
+  background: url('../images/home-hover.png');
+  background-size: cover;
 }
